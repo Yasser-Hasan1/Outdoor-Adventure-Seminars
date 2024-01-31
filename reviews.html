@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Yasser Hasan; 000888803 -->
+		<title>Outdoor Adventure Reviews</title>
+		<link href="printstyles.css" rel="stylesheet" type="text/css"  media="print" />
+		<link href="adventurestyles.css" rel="stylesheet" type="text/css"/>
+		<link href="mobile.css" rel="stylesheet" type="text/css"/>
+		<style>
+		
+		form {
+				
+				margin: 0 10%;
+				padding: 15px;
+				background-color: Purple;
+				color:white;
+			}
+		.btn {
+				
+				font-weight: bold;
+				color: black;
+				border-color: grey;
+				margin-top: 20px;
+				background-color: Orchid;
+			}
+		
+		#contactforyou{
+				border: 2px solid darkred;
+				background-color: lavender;
+				border-radius: 0 15px;
+				padding: 0 5px;
+			}
+			
+			
+		
+		
+		</style>
+		</head>
+		<body>
+		
+		<header>
+		<h1> Outdoor Adventure Seminars</h1>
+		<h1>2022/2023 </h1>
+		</header>
+		
+		 <nav>
+					<ul>
+						 <li><a href="#">About us</a></li>
+						 <li><a href="#">Travel</a></li>
+						 <li><a href="#">Photos</a></li>
+						 <li><a href="#">Shop</a></li>
+						 <li><a href="#">Reviews</a></li>
+						 <li><a href="Seminars.html">Seminars</a></li>
+						 <li><a href="#">Events</a></li>
+		
+					</ul>
+			 </nav>
+			 <form method="post" action="https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+			 <input type="hidden" name="formname" value="ReviewForm">
+			 <fieldset>
+			 <div><label class="seasons">I usuall prefer to trips this time of the year (Select all that apply):</label></div>
+				<div><select name="seasons" size="4">
+					<option>Winter</option>
+					<option>Spring</option>
+					<option>Summer</option>
+					<option>Fall</option>
+				</select></div>
+			 <legend> About you (optional)</legend>
+			 <div><label>First Name</label>
+				<input type="text" name="firstName" required></div>
+				<div><label>Last Name</label>
+				<input type="text" name="lastName" required size="20"></div>
+				<label>Phone Number</label>
+				<input type="tel" placeholder="(123)-456-789" name="telephone">
+				<div><label>Email Address</label>
+				<input type="email" name="email" placeholder="name@example.com"></div>
+				</fieldset>
+				
+				<fieldset>
+				<legend> Trip Reviews </legend>
+					<select name="trip" id="trips">
+					<option value="Alberta Rural">Alberta Rural</option>
+					<option value="B.C. Coast">B.C. Coast</option>
+					<option value="Ontario Lake Superior">Ontario Lake Superior</option>
+					<option value="PEI">PEI</option>
+					<option value="Nova Scotia Cabot">Nova Scotia Cabot Trail</option>
+				</select>
+				<select name="trip2" id="trips2">
+					<option value="5 days">5 days</option>
+					<option value="7 Days">7 days</option>
+					<option value="10 Days">10 Days</option>
+					<option value="14 Days">14 days</option>
+					</select>
+				<div><label> Your Rating: </label></div>
+				<label for="rate1"> <img src="images/wheel_sm.jpg" alt="wheel" /></label>
+				<input type="radio" name="rating" id="rating1" value="1"><br>
+				
+				<label for="rate2"><img src="images/wheel_sm.jpg" alt="wheel" /><img src="images/wheel_sm.jpg" alt="wheel" /></label>
+				<input type="radio" name="rating" id="rating3" value="2"><br>
+				
+				<label for="rate3"><img src="images/wheel_sm.jpg" alt="wheel" /><img src="images/wheel_sm.jpg" alt="wheel" /><img src="images/wheel_sm.jpg" alt="wheel" /></label>
+				<input type="radio" name="rating" id="rating3" value="3"><br>
+				
+				<label for="rate4"><img src="images/wheel_sm.jpg" alt="wheel" /><img src="images/wheel_sm.jpg" alt="wheel" /><img src="images/wheel_sm.jpg" alt="wheel" /><img src="images/wheel_sm.jpg" alt="wheel" /></label>
+				<input type="radio" name="rating" id="rating4" value="4"><br></div>
+				
+				<div><label> Comments </label></div>
+				<textarea name="comments" cols="65" rows="7"></textarea>
+				</fieldset>
+				
+				<fieldset>
+				<legend> I would be interested in these trips </legend>
+			<form action="/action_page.php">
+			   
+			   <input type="checkbox" id="opti1" name="interested" value="Sea or Lake Coast">
+			   <label for="option1"> Sea or Lake Coast</label><br>
+			   
+			   <input type="checkbox" id="opti2" name="interested" value="Rural">
+			   <label for="option2"> Rural</label><br>
+			   
+			   <input type="checkbox" id="opti3" name="interested" value="Mountains">
+			   <label for="option3"> Mountains</label><br>
+			   
+			   <input type="checkbox" id="opti4" value="opt4">
+			   <label for="option4">Other (Please Specifiy) <textarea name="Others"> </textarea></label><br>
+			  </fieldset>
+			  
+			<section><input type="submit" class="btn" value="Send Review">
+			<input type="reset" class="btn" value="Cancel"></section>			  
+			</form>
+			
+			<div>
+			<img src="images/formtable.png" alt="formtables" class="formprev"/>
+			</div>
+			
+			
+			
+		
+		<footer>
+		<img src="images/outdooradventurehorizontal.png" alt="pichorz" class="fimg" />
+		
+		</footer>
+			</body>
+</html>

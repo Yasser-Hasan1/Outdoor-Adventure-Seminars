@@ -1,0 +1,42 @@
+/* Default styles */
+/* Yasser Hasan; 000888803 */
+
+
+* {
+   margin: 0px;
+   list-style: none;
+}
+
+
+
+
+
+		header {
+		
+			background-color:#E9EFFF;
+			text-align: center;
+			padding: 0px;
+			margin: 0px;
+			}
+		
+		
+		
+		.fimg {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			}
+			
+			
+			
+		footer {
+			border-top: 2px solid black;
+			border-top-color: black;
+			
+		}
+		
+		.formprev {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			}
